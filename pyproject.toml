@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "graph-rag"
+version = "0.1.0"
+description = "Demos and experiments for created a graph rag"
+authors = ["Gavin Doughtie <gavin@doughtie.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain = "^0.2.1"
+langchain-community = "^0.2.1"
+langchain-openai = "^0.1.7"
+langchain-experimental = "^0.0.59"
+neo4j = "^5.20.0"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
