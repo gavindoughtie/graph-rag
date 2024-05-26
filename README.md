@@ -44,3 +44,7 @@ Note that the "apoc" plugin is required.
 
 
 Navigate to http://localhost:7474/ (usually). It should present you with the neo4j login screen. The default username and password are `neo4j/neo4j` and you should change them to match those set in your `.env` file.
+
+Once you're set up, you should be ready to run the iPython Notebook:
+
+https://github.com/gavindoughtie/graph-rag/blob/main/graph-rag.ipynb
