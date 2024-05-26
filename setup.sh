@@ -4,19 +4,20 @@
 # it assumes you have a relatively new Python on your system someplace.
 # Whaddya want for free?
 
-# brew link --overwrite certifi
-
 # install poetry
 brew install poetry
 
-# install Neo4J
-brew install neo4j
+brew install docker
 
 # install langchain, etc.
-# poetry init
-# poetry add langchain langchain-community langchain-openai langchain-experimental neo4j python-dotenv
 poetry install
-# source $(poetry env info --path)/bin/activate
+source $(poetry env info --path)/bin/activate
 
 echo 'Copy ".env.example" to ".env" and update the variables as documented in that file.'
 
+# run neo4j
+# You could run
+# neo4j-admin server start
+# if you've got neo4j installed locally
+# but you'll need to make sure you're running the APOC extensions
+# far easier is to run the docker image via run_neo4j_docker.sh
